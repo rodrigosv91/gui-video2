@@ -40,7 +40,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '17'
-#          distribution: 'temurin'
-#          cache: maven
+          distribution: 'temurin'
+          cache: maven
       - name: Run Tests
         run: mvn test
