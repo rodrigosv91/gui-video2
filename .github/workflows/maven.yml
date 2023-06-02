@@ -31,6 +31,7 @@ jobs:
         run: mvn compile
 
   testar_projeto:
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
