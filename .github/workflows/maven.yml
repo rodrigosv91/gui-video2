@@ -65,7 +65,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: userteste123/gui-video
-          tags: 1.0.0
+          tags: latest
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKERHUB_USERNAME }}
