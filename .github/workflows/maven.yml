@@ -64,7 +64,7 @@ jobs:
       - name: Build and Push docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: userteste123/gui-video1
+          image: userteste123/gui-video
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile
