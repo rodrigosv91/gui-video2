@@ -70,3 +70,10 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+  deploy:
+    needs: docker_build_and_push
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update Deploy
+      run: curl ${{ secrets.RENDER_HOOK_GUI_VIDEO }}
